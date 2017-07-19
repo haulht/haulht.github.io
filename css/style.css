@@ -1,0 +1,124 @@
+body,html{
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-font-smoothing:antialiased;
+	background:#fff; 
+	font-family: 'Source Sans Pro', sans-serif;
+	/*height:100%;*/
+	line-height:1;
+	margin:0;
+	padding:0;
+	text-rendering:
+	optimizeLegibility;
+	width:100%;
+}
+a {
+    color: #d63939;
+}
+.header{
+	text-align: center;
+	padding: 20px 0;
+}
+.title{
+	font-family: 'Airstream';
+	font-size: 85px;
+    line-height: 0px;
+    font-weight: 100;
+    color: #a71616;
+}
+.sub-title{
+	margin: 0;
+    margin-top: -20px;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 10px;
+}
+ul.nav {
+    margin-bottom: 20px;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+ul.nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+}
+ul.nav li a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.color {
+    background: #800000;
+    color: #fff;
+}
+.content{
+	margin: auto;
+    padding: 20px;
+    width: 600px;
+}
+h2 {
+    font-family: Airstream;
+    font-size: 45px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 100;
+    color: #a71616;
+}
+.color h2{
+	color: #fff;
+}
+p{
+	text-align: center;
+    line-height: 20px;
+}
+ul{
+	padding-left: 0;
+}
+#products ul{
+	list-style: none;
+    padding-left: 0;
+    width: 200px;
+    margin: auto;
+    display: table;
+}
+#products ul li{
+	width: 178px;
+    float: left;
+    padding: 5px;
+    border: 1px solid #800000;
+    text-align: center;
+    margin: 5px;
+}
+#products ul li a{
+	display: block;
+	text-decoration: none;
+}
+#products ul li a:hover{
+	cursor: pointer;
+	}
+#products ul li h3{
+	font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    background-color: brown;
+    padding: 7px;
+    margin-bottom: 0;
+}
+.icon-product{
+    font-size: 100px;
+    color: maroon;
+}
+#contact ul{
+	list-style: none;
+    text-align: center;
+}
+#contact ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+#contact ul a{
+	color: #fff;
+    font-size: 30px;
+}
