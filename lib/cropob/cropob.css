@@ -1,0 +1,33 @@
+.ob-crop-image{
+	position: relative;
+}
+.ob-croima-button {
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 5px;
+	padding: 0;
+}
+.ob-croima-button .fa{
+	font-size: 23px;
+	line-height: 23px;
+}
+.ob-area-button-group{
+	position: absolute;
+    bottom: -40px;
+    display: none;
+}
+.ob-croima-rotate-left .glyphicon-repeat{
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);
+}
+.ob-croima-label{    
+	position: absolute;
+}
+.ob-croima-label-angle{
+	padding: 9px;
+    border: 1px solid;
+}
