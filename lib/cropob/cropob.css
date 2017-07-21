@@ -13,9 +13,13 @@
 	line-height: 23px;
 }
 .ob-area-button-group{
-	position: absolute;
-    bottom: -40px;
     display: none;
+    float: right;
+}
+.ob-area-button-group .ob-croima-button{
+	float: right;
+	margin-right: 0;
+	margin-left: 5px;
 }
 .ob-croima-rotate-left .glyphicon-repeat{
 	-moz-transform: scale(-1, 1);

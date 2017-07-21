@@ -5,6 +5,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/fonts.css">
 	<link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../plugins/prismjs/prism.css">
+
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../lib/cropob/cropob.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -32,9 +34,46 @@
 	<section id="demos" class="color">
 		<div class="content">
 			<h2>demos</h2>
-			<p>Demo.</p>
-			<h2>Basic</h2>
-			<div id="cropob_basic"></div>
+			<p>demo.</p>
+			<!-- cropob basic -->
+			<h2>basic</h2>
+			<div id="cropob_basic" class="block-cropob"></div>
+			<p class="title-language">HTML</p>
+			<pre><code class="language-markup">&lt;!-- This wraps the whole cropob -->
+&lt;div id="cropob_basic">&lt;/div></code></pre>
+			<p class="title-language">Javascript</p>
+			<pre><code class="language-js">// Init cropob basic object
+$("#cropob_basic").croima({
+	'image_url'	: 'example.jpg'
+});</code></pre>
+			<!-- end cropob basic -->
+			<!-- cropob crop -->
+			<h2>rotate & crop feature</h2>
+			<div id="cropob_crop" class="block-cropob"></div>
+			<button type="button" class="cropob-btn" onclick="downloadImgCropOB1();">Download Image</button>
+
+			<p class="title-language">HTML</p>
+			<pre><code class="language-markup">&lt;!-- This wraps the whole cropob -->
+&lt;div id="cropob_crop">&lt;/div>
+&lt;!-- Button is used to download image from CropOB -->
+&lt;button type="button" onclick="downloadImgCropOBType2();">Download Image&lt;/button>
+</code></pre>
+			<p class="title-language">Javascript</p>
+			<pre><code class="language-js">// Init cropob crop object
+var cropobCrop = $("#cropob_crop").croima({
+    'image_url' :'1.JPG',
+    'type_feature': 2
+});
+// Download image
+function downloadImgCropOBType2(){
+  if(!cropobCrop)
+    return null;
+  var data = cropobCrop.croima('getImageData');
+  window.open(data);
+}</code></pre>
+
+			<!-- end cropob crop -->
+
 		</div>
 	</section>
 	<section id="getting-started">
@@ -61,8 +100,10 @@
 </body>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<script src="../plugins/prismjs/prism.js"></script>
+
+
 <script src="../plugins/jquery.mousewheel.min.js"></script>
 <script src="../lib/cropob/cropob.js"></script>
 <script src="js/custom.js"></script>
-
 </html>

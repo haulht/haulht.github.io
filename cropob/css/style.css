@@ -1,3 +1,18 @@
 .content {
     width: 960px;
 }
+.block-cropob{
+	margin: auto;
+}
+.title-language{
+	font-size: 17px;
+}
+.cropob-btn{
+	margin: 10px auto;
+    display: block;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff7ca;
+    border: 1px solid #8a0404;
+}
